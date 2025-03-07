@@ -3,11 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
-    background-color: black;
-}
+/*  body{
+    background: linear-gradient(135deg, #141f33 20%, #2a5298 40%, #3b8d99 60%, #f9d423 80%);
+    background-size: 200% 200%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+} */
 
 .interface{
     max-width: 1280px;
@@ -24,4 +30,84 @@ header .interface{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .menu-desktop nav ul{
+    list-style-type: none;
+}
+
+
+header .menu-desktop nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a{
+    color: rgb(18, 78, 129);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu-desktop nav a:hover{
+    transform: scale(1.1);
+}
+
+header .btn-contato button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid rgb(73, 47, 189);
+    color: rgb(4, 35, 63);
+    cursor: pointer;
+    transition: .5s;
+}
+
+header .btn-contato button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.logo{
+    display: inline-block;
+}
+.imglogo img{
+    width: auto;
+    height: 60px;
+}
+
+/* Estilo do Hero*/
+
+section.hero-site{
+    height: 90vh;
+    background-image: url(../imagens/fundo_principal1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+   
+}
+
+.hero-site .txt-hero h1{
+    font-size: 5em;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-site .txt-hero p{
+    font-size: 16px;
+    font-weight: 300;
 }
