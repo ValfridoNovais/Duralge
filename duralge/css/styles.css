@@ -20,16 +20,43 @@
     margin: 0 auto;
 }
 
+header .btn-contato button, .hero-site button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid rgb(244, 243, 245);
+    color: rgb(242, 244, 247);
+    cursor: pointer;
+    transition: .5s;
+}
+
 /*Estilo Header*/
 header{
     width: 100%;
     padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .interface{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .logo{
+    display: flex;
+}
+
+header .duralge{
+    font-family: "Akronim", system-ui;
+    font-size: 1em;
+    font-weight: 400;
+    color: white;
+}
+
+header .duralge span{
+    color: rgb(168, 168, 28);
 }
 
 header .menu-desktop nav ul{
@@ -43,7 +70,7 @@ header .menu-desktop nav ul li{
 }
 
 header .menu-desktop nav ul li a{
-    color: rgb(18, 78, 129);
+    color: rgb(251, 251, 252);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -56,15 +83,9 @@ header .menu-desktop nav ul li a{
 header .btn-contato button{
     width: 140px;
     height: 50px;
-    font-size: 18px;
-    background-color: transparent;
-    border: 1px solid rgb(73, 47, 189);
-    color: rgb(4, 35, 63);
-    cursor: pointer;
-    transition: .5s;
 }
 
-header .btn-contato button:hover{
+header .btn-contato button:hover, .hero-site button:hover{
     background-color: aliceblue;
     color: black;
 }
@@ -80,7 +101,7 @@ header .btn-contato button:hover{
 /* Estilo do Hero*/
 
 section.hero-site{
-    height: 90vh;
+    height: 100vh;
     background-image: url(../imagens/fundo_principal1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,7 +121,7 @@ section.hero-site{
     font-weight: 200;
 }
 
-.hero-site .txt-hero h1 span{
+.hero-site .txt-hero h2, .hero-site .txt-hero h2 span{
     display: block;
     font-size: 30px;
     font-weight: 600;
@@ -108,6 +129,50 @@ section.hero-site{
 }
 
 .hero-site .txt-hero p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.hero-site button{
+    width: 320px;
+    height: 80px;
+    font-size: 20px;
+}
+
+
+/* Estilo Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
