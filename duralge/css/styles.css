@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*Estilo Header*/
+header{
+    width: 100%;
+    padding: 40px 0;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
