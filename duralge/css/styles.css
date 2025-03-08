@@ -6,14 +6,9 @@
     font-family: "Poppins", sans-serif;
 }
 
-/*  body{
-    background: linear-gradient(135deg, #141f33 20%, #2a5298 40%, #3b8d99 60%, #f9d423 80%);
-    background-size: 200% 200%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    overflow: hidden;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-} */
+ body{
+    background-color: #e3e3e3;
+}
 
 .interface{
     max-width: 1280px;
@@ -30,152 +25,116 @@ header .btn-contato button, .hero-site button{
 }
 
 /*Estilo Header*/
-header{
-    width: 100%;
-    padding: 40px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+    header{
+        width: 100%;
+        padding: 40px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 
-header .interface{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    header .interface{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-header .logo{
-    display: flex;
-}
+    header .logo{
+        display: flex;
+    }
 
-header .duralge{
-    font-family: "Akronim", system-ui;
-    font-size: 1em;
-    font-weight: 400;
-    color: white;
-}
+    header .duralge{
+        font-family: "Akronim", system-ui;
+        font-size: 1em;
+        font-weight: 400;
+        color: white;
+    }
 
-header .duralge span{
-    color: rgb(168, 168, 28);
-}
+    header .duralge span{
+        color: rgb(168, 168, 28);
+    }
 
-header .menu-desktop nav ul{
-    list-style-type: none;
-}
+    header .menu-desktop nav ul{
+        list-style-type: none;
+    }
 
 
-header .menu-desktop nav ul li{
-    display: inline-block;
-    margin: 0 40px;
-}
+    header .menu-desktop nav ul li{
+        display: inline-block;
+        margin: 0 40px;
+    }
 
-header .menu-desktop nav ul li a{
-    color: rgb(251, 251, 252);
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-}
+    header .menu-desktop nav ul li a{
+        color: rgb(251, 251, 252);
+        text-decoration: none;
+        display: inline-block;
+        transition: .2s;
+    }
 
-.menu-desktop nav a:hover{
-    transform: scale(1.1);
-}
+    .menu-desktop nav a:hover{
+        transform: scale(1.1);
+    }
 
-header .btn-contato button{
-    width: 140px;
-    height: 50px;
-}
+    header .btn-contato button{
+        width: 140px;
+        height: 50px;
+    }
 
-header .btn-contato button:hover, .hero-site button:hover{
-    background-color: aliceblue;
-    color: black;
-}
+    header .btn-contato button:hover, .hero-site button:hover{
+        background-color: aliceblue;
+        color: black;
+    }
 
-.logo{
-    display: inline-block;
-}
-.imglogo img{
-    width: auto;
-    height: 60px;
-}
+    .logo{
+        display: inline-block;
+    }
+    .imglogo img{
+        width: auto;
+        height: 60px;
+    }
 
 /* Estilo do Hero*/
 
-section.hero-site{
-    height: 100vh;
-    background-image: url(../imagens/fundo_principal1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
+    section.hero-site{
+        height: 100vh;
+        background-image: url(../imagens/fundo_principal1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
 
-.hero-site .interface{
-    display: flex;
-    align-items: center;
-    height: 100%;
-   
-}
+    .hero-site .interface{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    
+    }
 
-.hero-site .txt-hero h1{
-    font-size: 5em;
-    font-weight: 200;
-}
+    .hero-site .txt-hero h1{
+        font-size: 5em;
+        font-weight: 200;
+    }
 
-.hero-site .txt-hero h2, .hero-site .txt-hero h2 span{
-    display: block;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
+    .hero-site .txt-hero h2, .hero-site .txt-hero h2 span{
+        display: block;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
 
-.hero-site .txt-hero p{
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
+    .hero-site .txt-hero p{
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
 
-.hero-site button{
-    width: 320px;
-    height: 80px;
-    font-size: 20px;
-}
+    .hero-site button{
+        width: 320px;
+        height: 80px;
+        font-size: 20px;
+    }
 
-
-/* Estilo Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.social-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
 
 /* Estilos de Sobre nós */
 
@@ -187,8 +146,193 @@ section.sobre-nos{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
 }
 
 .sobre-nos .itens-container .img-itens{
-    max-height: 200px;
+    height: 200px;
 }
+
+.sobre-nos .itens-container img{
+    height: 300px;
+}
+.sobre-nos .itens-container .txt-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+}
+
+.sobre-nos .itens-container .txt-itens span{
+    font-weight: 200;
+}
+
+.sobre-nos .itens-container .txt-itens p{
+    margin-top: 15px;
+}
+
+
+/* Estilo da seção de contato */
+section.contato {
+    background-color: #fff;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Interface da seção de contato */
+section.contato .interface {
+    display: flex;
+    flex-direction: row; /* Deixar os artigos lado a lado */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 900px; /* Aumenta a largura máxima apenas para esta seção */
+    width: 90%; /* Faz a interface ocupar mais espaço na tela */
+}
+
+/* Estilização do título */
+section.contato .txt-contato {
+    width: 65%; /* Ocupa metade do espaço */
+}
+
+section.contato .txt-contato h3 {
+    font-size: 2.5em;
+}
+
+section.contato .txt-contato h3 span {
+    font-weight: 200;
+    display: block;
+}
+
+/* Alinhamento dos botões */
+section.contato .icons-contato {
+    width: 100%; /* Ocupa metade do espaço */
+    display: flex;
+    flex-direction: column; /* Empilha os botões verticalmente */
+    gap: 15px; /* Espaçamento entre os botões */
+    align-items: flex-start; /* Alinha os botões à esquerda */
+}
+
+/* Estilização dos links */
+section.contato .icons-contato a {
+    text-decoration: none;
+    width: 100%; /* Faz com que os botões ocupem toda a largura do contêiner */
+}
+
+/* Estilização dos botões */
+section.contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha o texto e o ícone */
+    gap: 30px;
+    width: 100%; /* Faz com que os botões se expandam */
+    height: 80px;
+    padding: 10px 60px;
+    border: 1px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section.contato .icons-contato .mapa button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha o texto e o ícone */
+    gap: 30px;
+    width: 100%; /* Faz com que os botões se expandam */
+    height: 40px;
+    padding: 10px 60px;
+    border: 1px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section.contato .icons-contato button i {
+    font-size: 2em;
+}
+
+/* Efeito hover */
+section.contato .icons-contato button:hover {
+    background-color: #242222;
+}
+section.contato .icons-contato button:hover i, section.contato .icons-contato button:hover p, section.contato .icons-contato .mapa button:hover{
+    color: #f1f1f1;
+}
+
+
+/* Estilo da seção Produtos */
+section.produtos{
+    height: 600px;
+    background-image: url(../imagens/teofilo_otoni.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.produtos > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242222b6;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.produtos > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+/* Estilo Footer */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .social-links a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
