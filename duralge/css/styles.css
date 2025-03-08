@@ -176,3 +176,19 @@ footer {
     justify-content: center;
     text-decoration: none;
 }
+
+/* Estilos de Sobre nós */
+
+section.sobre-nos{
+    padding: 80px 0;
+}
+
+.sobre-nos .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-nos .itens-container .img-itens{
+    max-height: 200px;
+}
