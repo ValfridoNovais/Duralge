@@ -298,7 +298,37 @@ section.produtos{
     position: relative;
 }
 
+/* Estilos seção Baterias do Carrossel */
+section.baterias{
+    position: relative;
+    background-image: radial-gradient(ellipse farthest-corner,rgba(10, 19, 146, 0.616) 15%, rgba(27, 25, 124, 0.863) 85%);
+    height: 800px;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 600px;
+    gap: 50px;
+}
 
+section.baterias .img-baterias{
+    width: 250px;
+}
+
+section.baterias .item{
+    position: absolute;
+    inset: 0;
+    & .img-baterias{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70%;
+
+        & img{
+            width: 40%;
+        }
+    }
+}
 
 /* Estilo Footer */
     footer {
