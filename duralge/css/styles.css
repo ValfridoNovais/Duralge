@@ -15,7 +15,7 @@
     margin: 0 auto;
 }
 
-header .btn-contato button, .hero-site button{
+header .btn-contato button, .hero-site button, .produtos button{
     font-size: 18px;
     background-color: transparent;
     border: 1px solid rgb(244, 243, 245);
@@ -31,6 +31,7 @@ header .btn-contato button, .hero-site button{
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 3;
     }
 
     header .interface{
@@ -192,8 +193,10 @@ section.contato .interface {
 }
 
 /* Estilização do título */
-section.contato .txt-contato {
+section.contato .interface .txt-contato {
     width: 65%; /* Ocupa metade do espaço */
+    position: sticky;
+    top: 10%;
 }
 
 section.contato .txt-contato h3 {
@@ -269,13 +272,18 @@ section.contato .icons-contato button:hover i, section.contato .icons-contato bu
 
 /* Estilo da seção Produtos */
 section.produtos{
-    height: 600px;
+    height: 800px;
+
     background-image: url(../imagens/teofilo_otoni.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
 }
 
 .produtos > .overlay{
@@ -288,6 +296,25 @@ section.produtos{
     z-index: 1;
 }
 
+.produtos .itens-produtos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produtos .itens-produtos .img-itens{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.produtos .itens-produtos .img-itens .txt-produtos span{
+    font-size: 1em;
+    font-weight: 200;
+    color: rgb(10, 10, 10);
+    display: block;
+    align-items: self-end;
+}
 .produtos > .interface{
     display: flex;
     align-items: center;
@@ -298,47 +325,57 @@ section.produtos{
     position: relative;
 }
 
-/* Estilos seção Baterias do Carrossel */
-section.baterias{
-    position: relative;
-    background-image: radial-gradient(ellipse farthest-corner,rgba(10, 19, 146, 0.616) 15%, rgba(27, 25, 124, 0.863) 85%);
-    height: 800px;
-    left: 50%;
-    transform: translate(-50%);
-    display: grid;
+.produtos button, .produtos input {
+    display: flex;
     align-items: center;
-    grid-template-columns: 1fr 600px;
-    gap: 50px;
+    justify-content: space-between; /* Alinha o texto e o ícone */
+    gap: 30px;
+    width: 100%; /* Faz com que os botões se expandam */
+    height: 50px;
+    margin: 20px;
+    padding: 10px 60px;
+    border: 1px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    color: #242222;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-section.baterias .img-baterias{
-    width: 250px;
+.produtos button:hover{
+    background-color: rgb(130, 141, 27);
+    color: rgb(247, 246, 246);
 }
 
-section.baterias .item{
-    position: absolute;
-    inset: 0;
-    & .img-baterias{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 70%;
-
-        & img{
-            width: 40%;
-        }
-    }
+.produtos .itens-produtos .img-itens .txt-produtos h1{
+    font-size: 5em;
+    font-weight: 800;
+    color: rgb(223, 211, 45);
 }
 
+.produtos .itens-produtos .img-itens .txt-produtos p{
+    font-size: 1.4em;
+    font-weight: 400;
+    color: rgb(238, 238, 223);
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.produtos .itens-produtos .img-itens img{
+    max-width: 300px;
+}
 /* Estilo Footer */
     footer {
         background-color: #333;
         color: white;
         text-align: center;
-        padding: 10px 0;
+        padding: 10px;
         position: fixed;
         width: 100%;
         bottom: 0;
+        z-index: 1;
     }
 
     .social-links a {
@@ -365,4 +402,12 @@ section.baterias .item{
         justify-content: center;
         text-decoration: none;
     }
+
+   footer .bottom-footer{
+    border-top: 2px solid white;
+   }
+
+   footer .bottom-footer p{
+    margin-top: 10px;
+   }
 
