@@ -95,7 +95,8 @@ header .btn-contato button, .hero-site button, .produtos button{
     }
 
     header.rolar{
-        background-color: rgba(0, 0, 0, 0.966);
+        background-color: black;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.986) 75%,rgb(168, 168, 28));
         padding: 10px;
     }
 
@@ -282,7 +283,7 @@ section.contato .icons-contato button:hover i, section.contato .icons-contato bu
 
 /* Estilo da seção Produtos */
 section.produtos{
-    height: 700px;
+    height: 800px;
 
     background-image: url(../imagens/teofilo_otoni.png);
     background-position: center;
@@ -341,9 +342,9 @@ section.produtos{
     justify-content: space-between; /* Alinha o texto e o ícone */
     gap: 30px;
     width: 100%; /* Faz com que os botões se expandam */
-    height: 40px;
+    height: 50px;
     margin: 20px;
-    padding: 10px 30px;
+    padding: 10px 60px;
     border: 1px;
     border-radius: 8px;
     background-color: #f1f1f1;
@@ -370,86 +371,12 @@ section.produtos{
     font-weight: 400;
     color: rgb(238, 238, 223);
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 100px;
 }
 
 .produtos .itens-produtos .img-itens img{
     max-width: 300px;
 }
-/* Estilos do carrossel */
-.carrossel {
-    display: flex;
-    overflow: hidden;
-    width: 80%; /* Ocupa 75% da tela */
-    margin: 0 auto; /* Centraliza o carrossel */
-    position: relative;
-}
-
-.itens-produtos {
-    flex: 0 0 100%;
-    transition: transform 0.5s ease-in-out;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.carrossel-btn {
-    position: absolute;
-    bottom: 20px; /* Posiciona as setas na parte inferior */
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 2em;
-}
-
-.carrossel-btn.prev {
-    left: 20px;
-}
-
-.carrossel-btn.next {
-    right: 20px;
-}
-
-/* Ajustes para os botões e inputs dentro do carrossel */
-.produtos .what-produtos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.produtos .what-produtos input {
-    width: 80%;
-    max-width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.produtos .what-produtos button {
-    width: 80%;
-    max-width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f1f1f1;
-    color: #242222;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.produtos .what-produtos button:hover {
-    background-color: rgb(130, 141, 27);
-    color: rgb(247, 246, 246);
-}
-
 
 /* Estilo Contato 2 */
 .contato2 .interface {
