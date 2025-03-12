@@ -37,3 +37,13 @@ document.addEventListener("scroll", ()=>{
         navBar.classList.add('rolar')
     }else{navBar.classList.remove('rolar')}
 })
+
+
+
+function AceitoCookies() {
+    let popup = document.getElementsByClassName("popup_cookie");
+    popup[0].classList.remove('popup_cookie_show');
+    const expires = new Date();
+    let nexpires = expires.getFullYear() + 1;
+    document.cookie = "cookiesPlatonica=aceito; expires=18 Dec " + nexpires + " 12:00:00 UTC; path=/";
+}

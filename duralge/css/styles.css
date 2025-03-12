@@ -435,3 +435,21 @@ section.produtos{
     margin-top: 10px;
    }
 
+/* COOKIE */
+
+.popup_cookie{
+    position:fixed;
+    bottom:0;
+    z-index:120000;
+    width:100%;
+    margin:auto;
+    display:none;
+    justify-content:center
+}
+
+.popup_cookie_show{
+    display:flex
+}
+.popup_cookie_info{
+    background-color:#ffffff;
+    width:60%;min-width:960px;border-radius:10px 10px 0 0;overflow:hidden;border-top:solid 5px #22252C;box-shadow:0 0 20px -5px #22252C;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding-bottom:20px}.popup_cookie_info p{width:80%;padding:20px;text-align:justify;font-size:13px;color:#22252C}.popup_cookie_info p a{text-decoration:underline}.popup_cookie_info p a:hover{color:#727272}.popup_cookie_info_btn{width:20%;display:flex;padding:0 20px;justify-content:center}.popup_cookie_info_btn p{background-color:#F5562E;color:#ffffff;text-align:center;padding:8px 20px;font-size:14px;border-radius:5px;cursor:pointer}.popup_cookie_info_btn p:hover{background-color:#595959}@media (max-width: 960px){.popup_cookie_info{width:96%;min-width:unset}.popup_cookie_info p{width:70%;padding:10px}.popup_cookie_info_btn{width:30%}.popup_cookie_info_btn p{width:100%;padding:8px}}@media (max-width: 700px){.popup_cookie_info{width:100%;border-radius:0;flex-direction:column}.popup_cookie_info p{width:100%;font-size:12px}.popup_cookie_info_btn{width:100%;padding:0;margin:0}.popup_cookie_info_btn p{width:auto;padding:8px 15px}}
