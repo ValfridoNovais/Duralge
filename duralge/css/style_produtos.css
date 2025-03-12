@@ -52,6 +52,7 @@ header .btn-contato button, .hero-site button, .produtos button{
         position: fixed;
         top: 0;
         left: 0;
+        right: 0;
         z-index: 100;
     }
 
@@ -87,6 +88,7 @@ header .btn-contato button, .hero-site button, .produtos button{
     }
 
     header .menu-desktop nav ul li a{
+        font-size: 1.5em;
         color: rgb(251, 251, 252);
         text-decoration: none;
         display: inline-block;
@@ -94,7 +96,7 @@ header .btn-contato button, .hero-site button, .produtos button{
     }
 
     .menu-desktop nav a:hover{
-        transform: scale(1.1);
+        transform: scale(1.21);
     }
 
     header .btn-contato button{
@@ -116,8 +118,13 @@ header .btn-contato button, .hero-site button, .produtos button{
     }
 
     header.rolar{
-        background-image: linear-gradient(rgba(10, 192, 224, 0.986) 75%,rgb(143, 143, 105), rgba(168, 168, 28, 0.452));
-        padding: 10px;
+        background-image: url(../imagens/faixa_header.png);
+        background-size: cover; /* Faz a imagem cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem */
+        width: 100%; /* Ocupa 100% da largura do contêiner pai */
+        margin: 0; /* Remove margens */
+        padding: 0; /* Remove preenchimentos */
+        /*background-image: linear-gradient(rgba(10, 192, 224, 0.986) 75%,rgb(143, 143, 105), rgba(168, 168, 28, 0.452));*/
     }
 
     header.rolar .menu-desktop{
@@ -189,7 +196,7 @@ header .btn-contato button, .hero-site button, .produtos button{
 }
 .carousel .list .item .introduce .des{
     font-size: small;
-    color: #5559;
+    color: rgba(51, 50, 50, 0.8);
 }
 .carousel .list .item .introduce .seeMore{
     font-family: Poppins;
@@ -455,7 +462,7 @@ header .btn-contato button, .hero-site button, .produtos button{
     position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
     z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do carrossel */
     border-radius: 20% 30% 80% 10%; /* Bordas arredondadas assimétricas */
-    filter: blur(200px); /* Aplica um efeito de desfoque ao pseudo-elemento */
+    filter: blur(150px); /* Aplica um efeito de desfoque ao pseudo-elemento */
     top: 50%; /* Posiciona o topo do pseudo-elemento no centro vertical do pai */
     left: 50%; /* Posiciona a esquerda do pseudo-elemento no centro horizontal do pai */
     transform: translate(-10%, -50%); /* Ajusta o posicionamento centralizado */

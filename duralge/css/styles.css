@@ -96,9 +96,15 @@ header .btn-contato button, .hero-site button, .produtos button{
     }
 
     header.rolar{
-        background-color: black;
-        background-image: linear-gradient(rgba(10, 192, 224, 0.986) 75%,rgb(168, 168, 28));
-        padding: 10px;
+        
+            background-image: url(../imagens/faixa_header.png);
+            background-size: cover; /* Faz a imagem cobrir todo o elemento */
+            background-position: center; /* Centraliza a imagem */
+            width: 100%; /* Ocupa 100% da largura do contêiner pai */
+            margin: 0; /* Remove margens */
+            padding: 0; /* Remove preenchimentos */
+            /*background-image: linear-gradient(rgba(10, 192, 224, 0.986) 75%,rgb(143, 143, 105), rgba(168, 168, 28, 0.452));*/
+        
     }
 
     header.rolar .menu-desktop{
