@@ -116,7 +116,7 @@ header .btn-contato button, .hero-site button, .produtos button{
     }
 
     header.rolar{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.986) 75%,rgb(168, 168, 28), rgba(168, 168, 28, 0.452));
+        background-image: linear-gradient(rgba(10, 192, 224, 0.986) 75%,rgb(143, 143, 105), rgba(168, 168, 28, 0.452));
         padding: 10px;
     }
 
@@ -451,11 +451,11 @@ header .btn-contato button, .hero-site button, .produtos button{
     width: 500px; /* Largura do pseudo-elemento */
     height: 300px; /* Altura do pseudo-elemento */
     content: ''; /* Conteúdo vazio, necessário para exibir o pseudo-elemento */
-    background-image: linear-gradient(70deg, #DC422A, blue); /* Gradiente linear como fundo */
+    background-image: linear-gradient(70deg, #ecdd0a, blue); /* Gradiente linear como fundo */
     position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
     z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do carrossel */
     border-radius: 20% 30% 80% 10%; /* Bordas arredondadas assimétricas */
-    filter: blur(150px); /* Aplica um efeito de desfoque ao pseudo-elemento */
+    filter: blur(200px); /* Aplica um efeito de desfoque ao pseudo-elemento */
     top: 50%; /* Posiciona o topo do pseudo-elemento no centro vertical do pai */
     left: 50%; /* Posiciona a esquerda do pseudo-elemento no centro horizontal do pai */
     transform: translate(-10%, -50%); /* Ajusta o posicionamento centralizado */

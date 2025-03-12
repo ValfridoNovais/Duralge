@@ -67,13 +67,14 @@ header .btn-contato button, .hero-site button, .produtos button{
 
     header .menu-desktop nav ul li a{
         color: rgb(251, 251, 252);
+        font-size: 1.5em;
         text-decoration: none;
         display: inline-block;
         transition: .2s;
     }
 
     .menu-desktop nav a:hover{
-        transform: scale(1.1);
+        transform: scale(1.21);
     }
 
     header .btn-contato button{
@@ -96,7 +97,7 @@ header .btn-contato button, .hero-site button, .produtos button{
 
     header.rolar{
         background-color: black;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.986) 75%,rgb(168, 168, 28));
+        background-image: linear-gradient(rgba(10, 192, 224, 0.986) 75%,rgb(168, 168, 28));
         padding: 10px;
     }
 
@@ -396,7 +397,7 @@ section.produtos{
         color: white;
         text-align: center;
         padding: 10px;
-        position: fixed;
+        position: relative;
         width: 100%;
         bottom: 0;
         z-index: 1;
@@ -410,15 +411,15 @@ section.produtos{
 
     .whatsapp-float {
         position: fixed;
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
         bottom: 20px;
         right: 20px;
         background-color: #25d366;
         color: white;
         border-radius: 50px;
         text-align: center;
-        font-size: 30px;
+        font-size: 60px;
         box-shadow: 2px 2px 3px #999;
         z-index: 1000;
         display: flex;

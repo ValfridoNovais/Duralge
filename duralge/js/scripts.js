@@ -40,6 +40,24 @@ document.addEventListener("scroll", ()=>{
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Função para verificar se o cookie já foi aceito
+    function verificaCookie() {
+        const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+        const cookieAceito = cookies.find(cookie => cookie.startsWith('cookiesPlatonica='));
+
+        // Se o cookie já foi aceito, esconde o popup
+        if (cookieAceito) {
+            let popup = document.getElementsByClassName("popup_cookie");
+            popup[0].classList.remove('popup_cookie_show');
+        }
+    }
+
+    // Executa a verificação ao carregar a página
+    verificaCookie();
+});
+
+
 function AceitoCookies() {
     let popup = document.getElementsByClassName("popup_cookie");
     popup[0].classList.remove('popup_cookie_show');
