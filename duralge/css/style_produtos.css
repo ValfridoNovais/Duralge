@@ -48,7 +48,7 @@ header .btn-contato button, .hero-site button, .produtos button{
 /*Estilo Header*/
     header{
         width: 100%;
-        padding: 20px 0;
+        padding: 10px 0;
         position: fixed;
         top: 0;
         left: 0;
@@ -116,8 +116,7 @@ header .btn-contato button, .hero-site button, .produtos button{
     }
 
     header.rolar{
-        background-color: black;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.986) 75%,rgb(168, 168, 28));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.986) 75%,rgb(168, 168, 28), rgba(168, 168, 28, 0.452));
         padding: 10px;
     }
 
@@ -130,15 +129,15 @@ header .btn-contato button, .hero-site button, .produtos button{
 /* carousel */
 .carousel{
     position: relative;
-    height: 99vh;
+    height: 97vh;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: 20px;
 }
 .carousel .list{
     position: absolute;
     width: 100%;
     max-width: 90%;
-    height: 100%;
+    height: 95%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -338,7 +337,9 @@ header .btn-contato button, .hero-site button, .produtos button{
     pointer-events: none;
 }
 .carousel.showDetail .list .item:nth-child(2) img{
-    right: 50%;
+    width: 30%; /* Reduz o tamanho da imagem para 40% */
+    right: 55%; /* Ajusta o posicionamento para manter o alinhamento */
+    transition: width 0.5s, right 0.5s; /* Adiciona uma transição suave */
 }
 .carousel.showDetail .list .item:nth-child(2) .detail{
     opacity: 1;
@@ -446,23 +447,24 @@ header .btn-contato button, .hero-site button, .produtos button{
     opacity: 0;
     pointer-events: none;
 }
-.carousel::before{
-    width: 500px;
-    height: 300px;
-    content: '';
-    background-image: linear-gradient(70deg, #DC422A, blue);
-    position: absolute;
-    z-index: -1;
-    border-radius: 20% 30% 80% 10%;
-    filter: blur(150px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%, -50%);
-    transition: 1s;
+.carousel::before {
+    width: 500px; /* Largura do pseudo-elemento */
+    height: 300px; /* Altura do pseudo-elemento */
+    content: ''; /* Conteúdo vazio, necessário para exibir o pseudo-elemento */
+    background-image: linear-gradient(70deg, #DC422A, blue); /* Gradiente linear como fundo */
+    position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do carrossel */
+    border-radius: 20% 30% 80% 10%; /* Bordas arredondadas assimétricas */
+    filter: blur(150px); /* Aplica um efeito de desfoque ao pseudo-elemento */
+    top: 50%; /* Posiciona o topo do pseudo-elemento no centro vertical do pai */
+    left: 50%; /* Posiciona a esquerda do pseudo-elemento no centro horizontal do pai */
+    transform: translate(-10%, -50%); /* Ajusta o posicionamento centralizado */
+    transition: 1s; /* Duração da transição para animações */
 }
-.carousel.showDetail::before{
-    transform: translate(-100%, -50%) rotate(90deg);
-    filter: blur(130px);
+
+.carousel.showDetail::before {
+    transform: translate(-100%, -50%) rotate(90deg); /* Move e rotaciona o pseudo-elemento */
+    filter: blur(130px); /* Reduz o desfoque durante a transição */
 }
 @media screen and (max-width: 991px){
     /* ipad, tablets */
@@ -476,10 +478,10 @@ header .btn-contato button, .hero-site button, .produtos button{
         font-size: 2em;
     }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 881px){
     /* mobile */
     .carousel{
-        height: 600px;
+        height: 98vh;
     }
     .carousel .list .item{
         width: 100%;
