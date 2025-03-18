@@ -11,7 +11,7 @@
 }
 
 .interface{
-    max-width: 1280px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@ header .btn-contato button, .hero-site button, .produtos button{
 /*Estilo Header*/
     header{
         width: 100%;
-        padding: 20px 0;
+        padding: 20px;
         position: fixed;
         top: 0;
         left: 0;
@@ -102,7 +102,8 @@ header .btn-contato button, .hero-site button, .produtos button{
             background-position: center; /* Centraliza a imagem */
             width: 100%; /* Ocupa 100% da largura do contêiner pai */
             margin: 0; /* Remove margens */
-            padding: 0; /* Remove preenchimentos */
+            padding: 0 20px; /* Remove preenchimentos */
+            transition: .5s;
             /*background-image: linear-gradient(rgba(10, 192, 224, 0.986) 75%,rgb(143, 143, 105), rgba(168, 168, 28, 0.452));*/
         
     }
@@ -127,32 +128,39 @@ header .btn-contato button, .hero-site button, .produtos button{
         display: flex;
         align-items: center;
         height: 100%;
+        width: 90%;
+        justify-content: space-between;
+        padding-top: 5%;
     
     }
 
     .hero-site .txt-hero h1{
-        font-size: 5em;
-        font-weight: 200;
+        font-size: 3em;
+        font-weight: 300;
     }
 
     .hero-site .txt-hero h2, .hero-site .txt-hero h2 span{
         display: block;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 600;
         margin-bottom: 20px;
+        max-width: 70%;
     }
 
     .hero-site .txt-hero p{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 300;
         margin-bottom: 20px;
+        max-width: 60%;
     }
 
     .hero-site button{
-        width: 320px;
-        height: 80px;
+        width: 220px;
+        height: 50px;
         font-size: 20px;
     }
+ 
+
 
 
 /* Estilos de Sobre nós */

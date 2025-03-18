@@ -345,7 +345,7 @@ header .btn-contato button, .hero-site button, .produtos button{
 }
 .carousel.showDetail .list .item:nth-child(2) img{
     width: 30%; /* Reduz o tamanho da imagem para 40% */
-    right: 55%; /* Ajusta o posicionamento para manter o alinhamento */
+    right: 65%; /* Ajusta o posicionamento para manter o alinhamento */
     transition: width 0.5s, right 0.5s; /* Adiciona uma transição suave */
 }
 .carousel.showDetail .list .item:nth-child(2) .detail{
@@ -359,15 +359,19 @@ header .btn-contato button, .hero-site button, .produtos button{
     pointer-events: auto;
 }
 .carousel.showDetail .list .item:nth-child(2) .detail .title{
-    font-size: 4em;
+    font-size: 3em;
+    width: 100%;
+    margin-top: 20px;
 }
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
     display: flex;
     gap: 10px;
     width: 100%;
     border-top: 1px solid #5553;
-    margin-top: 20px;
+    margin-top: 40px;
+    justify-content: space-between;
 }
+
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications div{
     width: 90px;
     text-align: center;
