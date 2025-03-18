@@ -18,7 +18,14 @@
 
     <!-- Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- /Bootstrap icons-->
+
+    <!-- Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-masker@1.2.0/build/vanilla-masker.min.js"></script>
+    <!-- FIM Script CDN -->
+
 </head>
 <body>
 
@@ -137,7 +144,7 @@
     </section>
 
 
-    <section class="contato" id="link_contato">
+    <!-- <section class="contato" id="link_contato">
 
         <div class="interface">
 
@@ -162,7 +169,7 @@
                 <div class="mapa">
                     <h3>Nos encontre aqui</h3>
                     
-                    <!-- Mapa incorporado -->
+                  
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786.947243897413!2d-41.515571224471785!3d-17.860886876263084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb37153a0289c5f%3A0x1f0f2ea1b86e8acf!2sAuto%20El%C3%A9trica%20Duralge!5e1!3m2!1spt-BR!2sbr!4v1741428689177!5m2!1spt-BR!2sbr" 
                         width="600" 
                         height="450" 
@@ -172,7 +179,7 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 
-                    <!-- Link direto para a rota -->
+                   
                     <a href="https://maps.app.goo.gl/CnjHHt3gzRZoYWWSA?g_st=ac" target="_blank">
                         <button>📍 Ampliar Mapa e Traçar Rota</button>
                     </a>
@@ -181,10 +188,86 @@
 
         </div>
 
+    </section> -->
+
+    <section class="contato" id="link_contato">
+        <div class="interface">
+            <article class="txt-contato">
+                <h3><span>Fale com a </span>nossa equipe!</h3>
+            </article>
+    
+            <article class="icons-contato">
+                <a href="#" id="whatsappBtn">
+                    <button><i class="bi bi-whatsapp"></i><p>Chamar no WhatsApp</p></button>
+                </a>
+                <a href="#" id="emailBtn">
+                    <button><i class="bi bi-envelope-at-fill"></i><p>Nos envie um e-mail</p></button>
+                </a>
+                <a href="#" id="ligarBtn">
+                    <button><i class="bi bi-telephone-fill"></i><p>Ligar</p></button>
+                </a>
+                <a href="#" id="formularioBtn">
+                    <button><i class="bi bi-ui-checks"></i><p>Acesse o Formulário</p></button>
+                </a>
+    
+                <!-- Formulários -->
+                <div id="whatsappForm" class="form-container" style="display: none;">
+                    <form id="whatsappFormContent">
+                        <input type="text" id="whatsappNome" placeholder="Digite seu nome" required>
+                        <input type="text" id="whatsappNumero" placeholder="Digite seu número de WhatsApp" required>
+                        <textarea id="whatsappMensagem" placeholder="Qual tipo de serviço? (Ex: Bateria Veicular, Injeção Eletrônica, Ar Condicionado)" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+    
+                <div id="emailForm" class="form-container" style="display: none;">
+                    <form id="emailFormContent">
+                        <input type="text" id="emailNome" placeholder="Digite seu nome" required>
+                        <input type="text" id="emailwhatsapp" placeholder="Digite seu número de WhatsApp" required>
+                        <input type="email" id="emailEmail" placeholder="Digite seu e-mail" required>
+                        <textarea id="emailMensagem" placeholder="Digite sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+    
+                <div id="ligarForm" class="form-container" style="display: none;">
+                    <form id="ligarFormContent">
+                        <input type="text" id="ligarNome" placeholder="Digite seu nome" required>
+                        <input type="text" id="ligarNumero" placeholder="Digite seu número de WhatsApp" required>
+                        <textarea id="ligarMensagem" placeholder="Qual tipo de serviço? (Ex: Bateria Veicular, Injeção Eletrônica, Ar Condicionado)" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+    
+                <div id="formularioForm" class="form-container" style="display: none;">
+                    <form id="formularioFormContent">
+                        <input type="text" id="formularioNome" placeholder="Digite seu nome" required>
+                        <input type="text" id="formularioNumero" placeholder="Digite seu número de WhatsApp" required>
+                        <textarea id="formularioMensagem" placeholder="Qual tipo de serviço? (Ex: Bateria Veicular, Injeção Eletrônica, Ar Condicionado)" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+    
+                <div class="mapa">
+                    <h3>Nos encontre aqui</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786.947243897413!2d-41.515571224471785!3d-17.860886876263084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb37153a0289c5f%3A0x1f0f2ea1b86e8acf!2sAuto%20El%C3%A9trica%20Duralge!5e1!3m2!1spt-BR!2sbr!4v1741428689177!5m2!1spt-BR!2sbr" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/CnjHHt3gzRZoYWWSA?g_st=ac" target="_blank">
+                        <button>📍 Ampliar Mapa e Traçar Rota</button>
+                    </a>
+                </div>
+            </article>
+        </div>
     </section>
 
 
-    <section class="produtos">
+    <!-- <section class="produtos">
         <div class="interface">
             <article class="itens-produtos">
                 <div class="img-itens">
@@ -211,16 +294,16 @@
                     <img src="../duralge/imagens/produtos/bateria_moura.png" alt="Bateria Moura">
                 </div>
                 <div class="what-produtos">
-                    <!-- Formulário para capturar o nome -->
+           
                     <input type="text" id="nomeUsuario1" placeholder="Digite seu nome">
                     <button onclick="enviarWhatsApp(nomeUsuario1)">📲 Peça agora!</button>
                 </div>
             </article>
         </div>
         <div class="overlay"></div>
-    </section>
+    </section> -->
 
-    <section class="contato" style="height: 800px;">
+    <!-- <section class="contato" style="height: 800px;">
 
         <div class="interface">
 
@@ -246,7 +329,7 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <footer>
         <div class="social-links">
